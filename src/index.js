@@ -25,7 +25,6 @@ let months = [
 ];
 let currentMonth = months[now.getMonth()];
 
-
 let timestamp = document.querySelector(".timestamp");
 timestamp.innerHTML = `${currentDay}, ${now.getDate()} ${currentMonth} ${now.getFullYear()}, ${now.getHours()}:${now.getMinutes()}`;
 
@@ -44,7 +43,6 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
 function showTemp(response) {
-  console.log(response.data);
   document.querySelector("h2").innerHTML = response.data.name;
   document.querySelector(".currentDegrees").innerHTML = Math.round(
     response.data.main.temp
@@ -53,6 +51,12 @@ function showTemp(response) {
     response.data.main.humidity + "% humidity";
   document.querySelector("#wind").innerHTML =
     response.data.wind.speed + " wind speed";
+  document
+    .querySelector("#weatherIcon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 function showWeather(response) {
   let currentDegrees = document.querySelector(".currentDegrees");
@@ -64,7 +68,13 @@ function showWeather(response) {
     response.data.main.humidity + "% humidity";
   document.querySelector("#wind").innerHTML =
     response.data.wind.speed + " wind speed";
+  let iconElement = document.querySelector("#weatherIcon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
+
 function retrievePosition(position) {
   let apiKey = "8b6175f95e7e0d85f2cdc076f2d44d9d";
   let lat = position.coords.latitude;
