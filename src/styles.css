@@ -61,18 +61,6 @@ hr {
   text-align: center;
   font-size: 14px;
 }
-button.newYork,
-button.london,
-button.bangkok,
-button.sydney {
-  border-radius: 5px;
-  border-style: none;
-  font-size: 14px;
-  padding: 8px;
-  background-color: #5a92af;
-  color: white;
-  padding: 10 75 10 75;
-}
 .auto {
   margin: 20 0 0 0;
 }

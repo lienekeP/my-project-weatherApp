@@ -25,6 +25,7 @@ let months = [
 ];
 let currentMonth = months[now.getMonth()];
 
+
 let timestamp = document.querySelector(".timestamp");
 timestamp.innerHTML = `${currentDay}, ${now.getDate()} ${currentMonth} ${now.getFullYear()}, ${now.getHours()}:${now.getMinutes()}`;
 
@@ -43,16 +44,17 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
 function showTemp(response) {
+  console.log(response.data);
   document.querySelector("h2").innerHTML = response.data.name;
   document.querySelector(".currentDegrees").innerHTML = Math.round(
     response.data.main.temp
   );
   document.querySelector("#humid").innerHTML =
     response.data.main.humidity + "% humidity";
+  document.querySelector("#wind").innerHTML =
+    response.data.wind.speed + " wind speed";
 }
-
 function showWeather(response) {
-  console.log(response);
   let currentDegrees = document.querySelector(".currentDegrees");
   let temperature = Math.round(response.data.main.temp);
   currentDegrees.innerHTML = `${temperature}`;
@@ -60,6 +62,8 @@ function showWeather(response) {
   city.innerhtml = response.data.name;
   document.querySelector("#humid").innerHTML =
     response.data.main.humidity + "% humidity";
+  document.querySelector("#wind").innerHTML =
+    response.data.wind.speed + " wind speed";
 }
 function retrievePosition(position) {
   let apiKey = "8b6175f95e7e0d85f2cdc076f2d44d9d";
