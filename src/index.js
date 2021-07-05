@@ -95,14 +95,13 @@ function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector(".currentDegrees");
   let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
-
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 function displayCelciusTemperature(event) {
   event.preventDefault();
-  let currentDegrees = document.querySelector(".currentDegrees");
-  temperatureElement = celciusTemperature;
+  let temperatureElement = document.querySelector(".currentDegrees");
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
 
 let fahrenheit = document.querySelector("#fahrenheit");
