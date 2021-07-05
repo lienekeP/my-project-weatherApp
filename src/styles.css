@@ -21,6 +21,17 @@ h4 {
   font-size: 10px;
   padding-bottom: 10px;
 }
+.card-subtitle {
+  font-size: 14px;
+}
+#description {
+  font-style: italic;
+  font-size: 16px;
+}
+.currentDegrees {
+  font-size: 24px;
+}
+
 .units {
   position: relative;
   font-size: 12px;
