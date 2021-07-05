@@ -98,3 +98,5 @@ fahrenheit.addEventListener("click", displayFahrenheitTemperature);
 
 let celcius = document.querySelector("#celcius");
 celcius.addEventListener("click", displayCelciusTemperature);
+
+search("The Hague");
