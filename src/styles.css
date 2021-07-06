@@ -4,19 +4,19 @@ body {
 }
 
 h1 {
-  color: white;
+  color: #b7b7b7;
   text-align: center;
 }
 h2 {
-  color: #e1f6f4;
+  color: #b7b7b7;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
 h4 {
-  color: white;
+  color: #b7b7b7;
 }
 .timestamp {
-  color: white;
+  color: #b7b7b7;
   text-align: center;
   font-size: 10px;
   padding-bottom: 10px;
@@ -41,7 +41,7 @@ hr {
   background-color: #6ac1b8;
 }
 .container {
-  background: #07588a;
+  background: #137083;
 }
 .current {
   margin-bottom: 80px;
@@ -72,8 +72,8 @@ hr {
   font-size: 12px;
 }
 
-.forecast {
-  color: black;
+#forecast {
+  color: #b7b7b7;
   text-align: center;
   font-size: 14px;
 }

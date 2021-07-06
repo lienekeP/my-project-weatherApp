@@ -71,60 +71,21 @@
       </div>
       <hr />
       <h4>Forecast</h4>
-      <div class="forecast">
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <div class="card-body" style="font-size: 14px">
-                20°C <br />🌥 <br />
-                <strong>Mon</strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <div class="card-body" style="font-size: 14px">
-                18°C <br />🌥<br />
-                <strong>Tue</strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <div class="card-body" style="font-size: 14px">
-                18°C <br />🌧<br /><strong>Wed</strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <div class="card-body" style="font-size: 14px">
-                15°C <br />
-                🌥
-                <br />
-                <strong>Thu</strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <div class="card-body" style="font-size: 14px">
-                12°C <br />☀️ <br />
-                <strong>Fri</strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card">
-              <div class="card-body" style="font-size: 14px">
-                21°C <br />🌥 <br />
-                <strong>Sat</strong>
-              </div>
-            </div>
+      <div id="forecast">
+        <div class="col-2">
+          <div class="weather-forecast-date">${day}</div>
+          <img
+            src="http://openweathermap.org/img/wn/50d@2x.png"
+            alt=""
+            width="42"
+          />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max"> 18° </span>
+            <span class="weather-forecast-temperature-min"> 12° </span>
           </div>
         </div>
       </div>
-      <hr />
+      <br />
     </div>
     <a class="codedBy" href="https://github.com/lienekeP/my-project-weatherApp">
       open-source code by Lieneke</a
